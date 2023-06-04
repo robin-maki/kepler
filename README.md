@@ -1,38 +1,16 @@
-# create-svelte
-
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+# kepler
+[바로가기](https://kepler.planet.moe)
+네트워킹 행사들의 일정을 모아서 볼 수 있는 사이트입니다.
+## 기여 가이드
+`data` 폴더에 적당한 이름의 yaml 파일을 만들어서 Pull Request를 보내주세요.
+### yaml 파일 예시
+```yaml
+name: 행사 이름
+description: 행사 설명
+thumbnail: 썸네일 이미지 주소
+date: 행사 일시(2023-08-26 18:00 포맷을 추천하지만 moment.js가 지원하는 포맷이면 무엇이든 상관 없어요.)
+location: 행사 주소
+link:
+  버튼 이름1: 버튼 링크1
+  버튼 이름2: 버튼 링크2...
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
