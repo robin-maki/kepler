@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "pnpm run build:vite && pnpm run build:data",
+		"build": "pnpm run build:data && pnpm run build:vite",
 		"build:vite": "vite build",
 		"build:data": "tsx script/build.ts",
 		"preview": "vite preview",
