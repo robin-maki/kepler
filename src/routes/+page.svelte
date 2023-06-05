@@ -14,7 +14,7 @@
 <h1>이벤트 목록</h1>
 {#each events as event}
   {@const date = moment(event.date)}
-  <div class="card col-lg-6 d-flex flex-row">
+  <div class="card d-flex flex-row">
     <div class="card-img">
       <img src="{event.thumbnail}" alt="{event.name}" class="img-fluid rounded-start">
     </div>
